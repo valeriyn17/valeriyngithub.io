@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+body{font-family: Michroma, serif; background: linear-gradient(90deg, #44538E 0%, #151414 100%); color: aquamarine;}
+.nav-link active{color: aquamarine;}
+.navbar-nav .nav-link.active{color: coral;}
+/*.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{color: chocolate;}  */
+.sidebar{color: aquamarine; background: linear-gradient(270deg, #44538E 0%, #151414 100%);}
+.card{background: linear-gradient(270deg, #44538E 0%, #151414 100%); color: aquamarine; margin: 10px;}
+img{height: 250px; border-radius: 10px;}
+.card a{text-decoration: none; color: aquamarine;}
+.slide-text, .footer-text{color: aquamarine; margin: auto auto;}
+@media (max-width: 755px)
+{.carousel-indicators{display: none;}}
+.animation{animation: myAnim 2s ease 0s infinite normal forwards;}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+.rating{margin-bottom: o; padding-left: 0; list-style-type: none; color: yellow;}
+.rating li{display: inline-block;}
+.add-to-cart{border: none;height: 40px; width: 40px; display: flex; align-items: center; justify-content: center; background-color: chartreuse; color: black; border-radius: 10px; margin-top: 10px;}
+.info{display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;}
+
+footer{background: linear-gradient(270deg, #44538E 0%, #151414 100%);}
+.media-links{display: flex; justify-content: center; align-items: center;}
